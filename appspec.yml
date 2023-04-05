@@ -1,0 +1,10 @@
+version: 0.0
+os: windows
+files:
+  - source: /deploy/
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/start_server.ps1
+      timeout: 900
+      runas: Administrator
