@@ -23,7 +23,7 @@ if (Test-Path $TargetApacheFolder) {
 
 $apache_httpd_path = "C:\Apache24\bin\httpd.exe"
 Start-Process -NoNewWindow -FilePath $apache_httpd_path -ArgumentList "-k install -n MyServiceName"
-Start-Process -NoNewWindow -FilePath $apache_httpd_path -ArgumentList "-k start -n MyServiceName"
+Start-Process -NoNewWindow -FilePath $apache_httpd_path -ArgumentList "-k restart -n MyServiceName"
 
 
 
